@@ -1,1 +1,126 @@
-<p>data-viewer works!</p>
+<div class="container-md text-center">
+    <h1 class="mb-5">Welcome to the c19.e Data Tool</h1>
+
+    <div class="row justify-content-md-center text-center">
+
+        <!-- <h4 class="text-light"><strong>Select Location</strong></h4> -->
+
+        <div class="col-md-7 mt-3">
+
+            <h3 class="text-danger align-middle mb-3">STEP 1:</h3>
+
+            <h4 class="text-light "><strong>Select Location</strong></h4>
+
+            <form>
+                <div class="form-group">
+                    <!-- <label for="exampleInputEmail1">Select Location</label> -->
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="ex: Tampa, FL, USA">
+
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="dateFrom">From</label>
+                        <input type="text" class="form-control" id="dateFrom" required placeholder="month/day/year">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="dateTo">To</label>
+                        <input type="text" class="form-control" id="dateTo" placeholder="month/day/year" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-light mt-4"><strong>Population</strong></h4>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+
+                            <label for="age">AGE:</label>
+
+                            <select name="age" id="age" class="form-control">
+                                <option value="1">No Preference</option>
+                                <option value="2"> - 17</option>
+                                <option value="3">18 - 24</option>
+                                <option value="4">25 - 44</option>
+                                <option value="5">44 +</option>
+                            </select>
+                        </div>
+                        <div class="col-sm">
+
+                            <label for="gender">GENDER:</label>
+
+                            <select name="gender" id="gender" class="form-control">
+                                <option value="volvo">No Preference</option>
+                                <option value="saab">Male</option>
+                                <option value="mercedes">Female</option>
+
+                            </select>
+
+                        </div>
+                        <div class="col-sm">
+
+                            <label for="eth">ETHNICITY:</label>
+
+                            <select name="eth" id="eth" class="form-control">
+                                <option value="volvo">No Preference</option>
+                                <option value="volvo">American</option>
+                                <option value="saab">Asian</option>
+                                <option value="mercedes">Black</option>
+                                <option value="audi">Hispanic</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h3 class="text-danger align-middle mb-3 mt-5">STEP 2:</h3>
+
+                <h4 class="text-light mb-0"><strong>choose your comparison data set</strong></h4>
+                <p><small>This data comes from an open source, private source or c3ai.</small></p>
+
+                <div class="col-sm mb-3">
+
+                    <select name="eth" id="eth" class="form-control">
+                        <option value="volvo">Select</option>
+                        <option value="volvo">Data Cent</option>
+                        <option value="saab">Aggregates</option>
+                        <option value="mercedes">Full on</option>
+                        <option value="audi">Nebulus</option>
+                    </select>
+
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="dateFrom">From</label>
+                        <input type="text" class="form-control" id="dateFrom" required placeholder="month/day/year">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="dateTo">To</label>
+                        <input type="text" class="form-control" id="dateTo" placeholder="month/day/year" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <button type="submit" class="btn btn-warning" style="background-color: orangered;">Generate Results</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

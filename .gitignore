@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# App Folders
+c3covid19/package-lock.json
+c3covid19/node_modules
