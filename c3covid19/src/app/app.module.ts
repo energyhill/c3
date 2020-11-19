@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DataFormComponent } from './pages/data-form/data-form.component';
@@ -14,6 +16,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { DataViewerComponent } from './pages/data-viewer/data-viewer.component';
+
+import {DataServiceService} from './services/data-service.service'
 
 @NgModule({
   declarations: [
@@ -32,9 +36,10 @@ import { DataViewerComponent } from './pages/data-viewer/data-viewer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

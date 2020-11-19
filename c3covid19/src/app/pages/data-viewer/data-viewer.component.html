@@ -116,8 +116,17 @@
                 </div>
 
                 <hr>
-                <button type="submit" class="btn btn-warning" style="background-color: orangered;">Generate Results</button>
+                <button type="submit" class="btn btn-warning" style="background-color: orangered;">Generate
+                    Results</button>
             </form>
+
+        </div>
+
+        <div>
+
+            <div *ngIf="chart">
+                <canvas id="canvas">{{ chart }}</canvas>
+            </div>
 
         </div>
 
